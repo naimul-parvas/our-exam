@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+html{
+    
+    @apply m-0 p-0 box-border
+}
+
+
+.logo{
+    @apply w-[100px] 
+}
+
+.header-item{
+    @apply flex justify-between items-center max-w-[1280px] mx-auto 
+}
+
+nav {
+    @apply ml-[150px] 
+}
+
+nav a{
+    @apply pl-9 font-semibold text-[20px] hover:underline 
+}
+
+.btn {
+    @apply flex gap-[20px] 
+}
+
+
+.contact{
+    @apply bg-black inline-block font-semibold px-[15px] py-[8px] text-white rounded-[20px]  hover:px-[40px] translate-x-0 transition-all duration-500
+       
+    }
+
+
+.templete{
+    @apply  bg-gray-50 border-solid border-2 border-black  inline-block font-semibold px-[15px] py-[8px] text-black rounded-[20px] hover:px-[40px] transition-all duration-500 hover:bg-black hover:text-white
+}
+
+.container{
+    @apply max-w-5xl mx-auto 
+}
+.header-container{
+    @apply mt-[100px]
+}
+
+.header-h2{
+    @apply mb-[50px] font-bold border-solid border-2 border-black inline-block text-black px-2 py-1 rounded-[20px] hover:bg-black hover:text-white transition-all duration-700
+}
+
+.header-h1{
+    @apply text-[80px] font-bold leading-[100px] 
+   
+}
+
+span{
+    @apply  font-abc tracking-[10px] font-thin italic
+}
+
+.header-p{
+    @apply text-[22px] font-semibold mt-[20px]
+}
+
+.about-btn{
+    @apply flex justify-end
+}
+.header-a{
+    @apply  border-solid mt-[20px] mb-[50px] border-2 border-black px-[30px] py-[15px] text-black rounded-[40px]  font-bold hover:px-[40px] transition-all duration-300 hover:bg-black hover:text-white
+}
+
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scroll-bar::-webkit-scrollbar {
+    display: hidden;
+  } 
+
+
+.social{
+    @apply max-w-[1100px] m-auto  border-b-2 border-black
+
+
+
+}
+
+  .client{
+
+@apply flex justify-between
+  }
+
+  .client h1{
+    @apply text-[40px] pb-[40px]
+    font-bold
+  }
+  .client-p{
+    @apply text-xl mt-[30px] mb-[15px]
+  }
+
+  .secvice h3{
+    @apply mt-8 text-4xl font-abc italic font-semibold
+  }
+  .secvice h1{
+    @apply text-[60px] font-bold mt-[18px]
+  }
+  .secvice p{
+    @apply text-2xl mt-[18px]
+  }
+  .service-content h1{
+    @apply  text-[50px] font-bold translate-y-3 group-hover:translate-y-0 duration-500
+}
+
+.service-content p{
+    @apply text-[20px] opacity-0 translate-y-8 group-hover:translate-y-0  duration-500 group-hover:opacity-100
+}
+.service-img img{
+    @apply w-[250px] h-[150px] rotate-12 scale-0 group-hover:scale-100 duration-700 absolute top-0 right-0
+}
+.hovar-service{
+    @apply flex justify-between mt-8 transition-all duration-500 relative cursor-pointer
+}
+
+.project{
+    @apply mt-[100px] border-solid  border-black border-t-2
+}
+
+.project-content h2{
+
+    @apply pt-8 font-abc font-semibold italic text-4xl
+
+}
+.project-content h1{
+
+    @apply  text-[50px] font-bold
+
+}
+.project-content p{
+
+    @apply text-[20px] pb-[30px]
+
+}
+.project-info h2{
+    @apply text-[40px] font-bold pt-6
+}
+.project-info p{
+    @apply text-[20px]  pt-2
+}
+
+.item{
+    @apply mt-6
+}
+.item h3{
+    @apply inline mr-6 uppercase font-bold border-solid border-2 border-black  text-black px-3 py-2 rounded-[30%] hover:bg-black hover:text-white transition-all duration-700
+
+}
+
+.project-card{
+
+    @apply flex gap-4 mt-[50px]
+}
+
+
+.project2 img{
+    @apply w-full h-[350px] object-cover
+}
+
+.project-btn{
+    @apply flex mt-[50px] text-black border-solid border-2 border-black items-center justify-center py-[15px] rounded-[40px] hover:bg-black hover:text-white duration-500 hover:translate-y-2
+}
+
+.project-btn a{
+    @apply text-[20px] font-semibold 
+}
+
+.about h2{
+    @apply mt-10 text-4xl  font-semibold font-abc italic
+}
+
+.about h1{
+    @apply mt-4 text-[60px]  font-bold 
+}
+.about h3{
+    @apply mt-8 text-5xl  font-bold 
+}
+
+.client-info{
+    @apply flex items-center gap-4 border-solid border-b-2 border-black
+}
+.client-img img{
+    @apply w-[150px] h-[150px] rounded-[100%] object-cover mt-6 mb-[60px]
+}
+.client-comment h1{
+    @apply font-bold text-3xl
+}
+.client-comment p{
+    @apply  text-xl 
+}
+
+.career h4{
+    @apply mt-10 text-4xl  font-semibold font-abc italic
+}
+
+.career h1{
+    @apply mt-4 text-[50px]  font-bold 
+}
+
+.career h5{
+    @apply text-[25px]
+}
+.carrer-age{
+    @apply flex justify-between items-center pb-[70px] border-b-2 border-black border-solid
+}
+.carrer-age h1{
+    @apply text-6xl font-bold mt-10
+}
+.carrer-age p{
+    @apply text-2xl 
+}
+
+
+
+
+}
+
+@media(max-width:1000px){
+
+nav {
+    @apply hidden 
+}
+.header-a{
+    @apply  pr-[20px]
+
+}
+
+.service-content h1{
+    @apply text-[40px] 
+}
+.service-content p{
+    @apply opacity-100
+
+}
+.service-img{
+    @apply scale-0
+
+}
+.secvice h1{
+    @apply text-[40px]
+}
+.project-card{
+    @apply flex flex-col
+}
+.project-btn{
+    @apply w-[90%] mx-auto
+}
+
+}
+@media(max-width:1100px){
+
+.btn{
+    @apply pr-[20px]
+}
+
+.header-h1 {
+    @apply text-[60px] leading-[80px] pl-[20px]
+}
+.header-h2{
+    @apply ml-[20px] mr-[20px]
+}
+.header-p{
+    @apply pl-[20px] text-[20px] pr-[20px] font-normal
+}
+
+.client h1{
+    @apply text-[30px]
+    font-bold
+  }
+  .social{
+    @apply pl-[20px] pr-[20px] 
+}
+.secvice h3{
+    @apply ml-[20px]
+}
+.secvice h1{
+    @apply pl-[20px]
+}
+.secvice p{
+    @apply pl-[20px] pr-[20px]
+}
+
+.service-content{
+    @apply pl-[20px]
+}
+
+.project-content{
+    @apply p-[20px]
+}
+.project-img{
+    @apply p-[20px]
+}
+.project-info{
+    @apply pl-[20px]
+}
+
+.project-card{
+    @apply p-[20px]
+}
+
+
+.testemonial{
+    @apply p-[20px]
+}
+.testemonial h2{
+    @apply text-[30px]
+}
+.testemonial h1{
+    @apply text-[50px]
+}
+.testemonial h3{
+    @apply text-[40px] font-semibold
+}
+.testemonial h3{
+    @apply text-[40px] font-semibold
+}
+
+.carrer-path{
+    @apply pl-[20px] pr-[20px]
+}
+
+.blog-h3{
+    @apply pl-[20px]
+}
+.blog h1{
+    @apply pl-[20px] 
+}
+footer{
+    @apply p-[20px]
+}
+
+}
+
+@media(max-width:800px){
+
+    .header-h1 {
+        @apply text-[45px] leading-[50px] 
+    }
+    
+    span{
+        @apply tracking-normal
+    }
+    .about-btn{
+        @apply flex justify-center mt-[20px] mb-[20px]
+        
+    }
+    .header-a{
+        @apply w-[90%] flex justify-center m-0
+    }
+    .client h1{
+        @apply text-[16px]
+        
+      }
+
+      .secvice p{
+        @apply text-[20px] leading-6 
+    }
+      .secvice h1{
+        @apply text-[50px]
+    }
+   .item .h{
+    @apply  hidden
+   }
+
+.client-info h1{
+    @apply text-[20px]
+}
+.client-info p{
+    @apply text-[16px] leading-4
+}
+.client-img img {
+    @apply w-[100px] h-[100px] 
+}
+.client-img  {
+    @apply  mt-[39px]
+}
+
+.career h4{
+    @apply text-[30px]
+}
+.career h1{
+    @apply text-[40px]
+}
+.career h5{
+    @apply text-[20px]
+}
+
+.carrer-age{
+    @apply flex flex-col
+}
+.carrer-age h1{
+    @apply text-[30px]
+}
+
+.footer-third {
+    @apply block
+}
+.footer-first-h1 {
+    @apply text-5xl
+}
+.footer-third .div1{
+    @apply mb-[30px]
+}
+
+
+
+}
+    
